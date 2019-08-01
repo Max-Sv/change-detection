@@ -8,13 +8,14 @@
     <mat-card-actions>
       <mat-form-field appearance="outline">
         <mat-label>Enter a number</mat-label>
-        <input matInput type="number" />
+        <input matInput type="number" [(ngModel)]="value" />
       </mat-form-field>
-      <button mat-stroked-button color="primary">ADD</button>
+      <button mat-stroked-button color="primary" (click)="add()">ADD</button>
     </mat-card-actions>
     <mat-card-content>
-      <app-item1></app-item1>
-      <div class="onpush"></div>
+      <div class="board"><app-item1 [value]="addValue"></app-item1></div>
+      <div class="board"><app-item2 [value]="addValue"></app-item2></div>
+      <div class="board"><app-item3 [value]="addValue"></app-item3></div>
     </mat-card-content>
   </mat-card>
 </main>

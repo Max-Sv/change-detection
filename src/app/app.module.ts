@@ -7,15 +7,18 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { item1Component } from './item1.component';
-
+import { item2Component } from './item2.component';
+import { item3Component } from './item3.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [AppComponent, item1Component],
+  declarations: [AppComponent, item1Component, item2Component, item3Component],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

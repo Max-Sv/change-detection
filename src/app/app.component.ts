@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'change-detection';
+  public value = 0;
+  public addValue = 0;
+  add() {
+    this.addValue = this.value;
+  }
 }

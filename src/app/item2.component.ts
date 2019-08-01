@@ -2,15 +2,15 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
 
 @Component({
-  selector: 'app-item1',
+  selector: 'app-item2',
   template: `
-    <h4>Default</h4>
+    <h4>OnPush</h4>
     <p>{{ counter }}</p>
   `,
-  changeDetection: ChangeDetectionStrategy.Default,
-  styles: ['h4 { font-size: 18px; color: #4d4dff }']
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  styles: ['h4 { font-size: 20px; color: #4d4dff }']
 })
-export class item1Component {
+export class item2Component {
   @Input() value: number;
   public counter = 0;
   constructor() {
